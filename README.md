@@ -10,4 +10,3 @@
 2. matplotlib
 3. pandas
 4. numpy
-
