@@ -5,10 +5,9 @@
 ### brightness_values.txt is the file where all the frame's brightness values are stored using python code.
 
 ### Libraries used: 
-'''
+#
 1. cv2 (Open-CV)
 2. matplotlib
 3. pandas
 4. numpy
 
-'''
