@@ -10,3 +10,13 @@
 2. matplotlib
 3. pandas
 4. numpy
+
+## Brightness trends frames quantity:
+
+![Brightness trends over frame](https://res.cloudinary.com/dw6ps7x9q/image/upload/v1732966349/output_ralpwr.png)
+## Frame distributed according to time of the day:
+
+![Brightness Wise Frames](https://res.cloudinary.com/dw6ps7x9q/image/upload/v1732966349/Distribution_eacirz.png)
+
+## Frames distribution represented in pie graph:
+![Pie-Graph](https://res.cloudinary.com/dw6ps7x9q/image/upload/v1732966349/pie_paxnva.png)
