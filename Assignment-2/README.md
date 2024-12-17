@@ -10,4 +10,4 @@ Step 4: Creating folder to save output images.
 Step 5: Lastly, cutting all the pieces or dividing images into total pieces as per number of rows and columns mentioned.
 Hurray, Work done!
 
-![Problem Statement for Assignment 2]('assignment-2.jpg'))
+![Problem Statement for Assignment 2]('assignment-2.jpg')
