@@ -1,4 +1,4 @@
-# 🌇 Day Night Vision – Assignment 1 (Computer Vision)
+# 🌇 Day Night Vision – Computer Vision
 
 ## 📝 Problem Statement
 
