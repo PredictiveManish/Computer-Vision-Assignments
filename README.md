@@ -1,38 +1,104 @@
-## This is the assignment-1 of the Computer vision.
-Problem Statement-
-### Assignment 1 :
+# 🌇 Day Night Vision – Assignment 1 (Computer Vision)
 
-Record a video or download a timelapse video of evening where the transition of day to evening or evening to night is visible clearly. 
+## 📝 Problem Statement
 
-video condition : any of below
-1. Day to evening
-2. Evening to Night
-3. Night to Morning/Day
-Sample:
-Input : video file path
-Output : 40% is Day/Evening, 60% is Night/Evening
-Output : 20 Early morning, 10% night, 70% Day
+Analyze the transition of light throughout a video to determine how much of the footage corresponds to different times of the day based on brightness.
 
-## Solution- 
-## Youtube Video link - https://youtu.be/Ljh1ycfNeZ0?si=1ZGFEI6q3TIywFkr
+### Video Scenarios:
+- 🌞 Day to Evening  
+- 🌆 Evening to Night  
+- 🌃 Night to Morning/Day  
 
-## This is the video which is analysed.
-### File details- Main Solution is in assignment1.ipynb
-### brightness_values.txt is the file where all the frame's brightness values are stored using python code.
+---
 
-### Libraries used: 
-#
-1. cv2 (Open-CV)
-2. matplotlib
-3. pandas
-4. numpy
+### 🎥 Sample Input:
+**Input**: Path to a timelapse or transition video  
+**Output**:  
+- `40%` Day/Evening  
+- `60%` Night  
+or  
+- `20%` Early Morning, `10%` Night, `70%` Day  
 
-## Brightness trends frames quantity:
+---
+
+## ✅ Solution Overview
+
+### 📺 [YouTube Video Link (Video Analysed)](https://youtu.be/Ljh1ycfNeZ0?si=1ZGFEI6q3TIywFkr)
+
+This video is used for the analysis in this project.
+
+### 📁 Main Files:
+
+- `day_night_vision.ipynb`: Main Jupyter notebook with all the processing steps.
+- `brightness_values.txt`: Contains brightness data for each extracted video frame.
+- `Images/`: Contains all extracted frames from the video.
+
+---
+
+## ⚙️ Technologies and Libraries Used
+
+| Library      | Purpose                                  |
+|--------------|-------------------------------------------|
+| `cv2`        | Reading video, extracting and saving frames |
+| `numpy`      | Calculating brightness using mean intensity |
+| `pandas`     | (Optional) For data handling (if extended)  |
+| `matplotlib` | Plotting brightness trends and charts       |
+
+---
+
+## 📊 Brightness Trends Analysis
+
+### 🔢 Frame-wise Brightness Trend
+
+This line graph shows how brightness fluctuates across the video timeline.
 
 ![Brightness trends over frame](https://res.cloudinary.com/dw6ps7x9q/image/upload/v1732966349/output_ralpwr.png)
-## Frame distributed according to time of the day:
+
+---
+
+### 🧮 Frame Classification by Time of Day
+
+Frames are categorized into:
+- ☀️ **Morning** (Brightness: 60–100)
+- 🌇 **Sunset** (Brightness: 40–60)
+- 🌃 **Night** (Brightness: 0–40)
+
+Distribution based on average brightness per frame:
 
 ![Brightness Wise Frames](https://res.cloudinary.com/dw6ps7x9q/image/upload/v1732966349/Distribution_eacirz.png)
 
-## Frames distribution represented in pie graph:
+---
+
+### 🥧 Pie Chart – Frame % Distribution
+
+Shows proportion of frames in each category:
+
 ![Pie-Graph](https://res.cloudinary.com/dw6ps7x9q/image/upload/v1732966349/pie_paxnva.png)
+
+---
+
+## 📌 Key Steps in the Notebook
+
+1. **Read the Video**  
+   Using `cv2.VideoCapture` to read frames from `Sunset.webm`.
+
+2. **Extract Frames**  
+   Frames are saved as `.png` files for analysis.
+
+3. **Calculate Brightness**  
+   Each frame is converted to grayscale and average brightness is calculated using `numpy`.
+
+4. **Save Brightness Data**  
+   All brightness values are stored in `brightness_values.txt`.
+
+5. **Categorize Frames**  
+   Based on brightness, frames are classified into Morning, Sunset, or Night.
+
+6. **Visualize Data**  
+   Used `matplotlib` to generate trend lines, bar graphs, and pie charts.
+
+---
+
+## 📈 Final Output Summary
+
+> Example Output:
