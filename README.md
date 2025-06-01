@@ -80,7 +80,7 @@ Shows proportion of frames in each category:
 ## 📌 Key Steps in the Notebook
 
 1. **Read the Video**  
-   Using `cv2.VideoCapture` to read frames from `Sunset.webm`.
+   Using `cv2.VideoCapture` to read frames from `Sample.mp4`.
 
 2. **Extract Frames**  
    Frames are saved as `.png` files for analysis.
